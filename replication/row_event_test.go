@@ -6,7 +6,7 @@ import (
 	"github.com/shopspring/decimal"
 	"github.com/stretchr/testify/require"
 
-	"github.com/go-mysql-org/go-mysql/mysql"
+	"github.com/jryll/go-mysql/mysql"
 )
 
 func TestDecodeDecimal(t *testing.T) {

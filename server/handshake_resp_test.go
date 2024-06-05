@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/go-mysql-org/go-mysql/mocks"
-	"github.com/go-mysql-org/go-mysql/mysql"
+	"github.com/jryll/go-mysql/mocks"
+	"github.com/jryll/go-mysql/mysql"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 )

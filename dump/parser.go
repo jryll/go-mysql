@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/go-mysql-org/go-mysql/mysql"
+	"github.com/jryll/go-mysql/mysql"
 	"github.com/pingcap/errors"
 )
 

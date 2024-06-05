@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-mysql-org/go-mysql/test_util"
+	"github.com/jryll/go-mysql/test_util"
 	"github.com/siddontang/go-log/log"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"

@@ -8,7 +8,7 @@ import (
 	"github.com/pingcap/errors"
 	"github.com/siddontang/go/hack"
 
-	. "github.com/go-mysql-org/go-mysql/mysql"
+	. "github.com/jryll/go-mysql/mysql"
 )
 
 const (

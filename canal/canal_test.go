@@ -10,9 +10,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/go-mysql-org/go-mysql/mysql"
-	"github.com/go-mysql-org/go-mysql/replication"
-	"github.com/go-mysql-org/go-mysql/test_util"
+	"github.com/jryll/go-mysql/mysql"
+	"github.com/jryll/go-mysql/replication"
+	"github.com/jryll/go-mysql/test_util"
 )
 
 type canalTestSuite struct {
