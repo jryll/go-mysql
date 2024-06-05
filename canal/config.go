@@ -102,6 +102,9 @@ type Config struct {
 
 	// Set Localhost
 	Localhost string
+
+	// allow binlog to begin at specific position
+	BinLog *mysql.Position
 }
 
 func NewConfigWithFile(name string) (*Config, error) {

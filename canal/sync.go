@@ -12,6 +12,14 @@ import (
 )
 
 func (c *Canal) startSyncer() (*replication.BinlogStreamer, error) {
+	if c.cfg.BinLog != nil {
+		s, err := c.syncer.StartSync(*c.cfg.BinLog)
+		if err != nil {
+			return nil, errors.Errorf("start sync replication at binlog %v error %v", c.cfg.BinLog, err)
+		}
+		c.cfg.Logger.Infof("start sync binlog at binlog file %v", c.cfg.BinLog)
+		return s, nil
+	} // else, using gtid
 	gset := c.master.GTIDSet()
 	if gset == nil || gset.String() == "" {
 		pos := c.master.Position()
